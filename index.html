@@ -29,18 +29,22 @@ H1 {
   <script>
 function func(){
 var n;
+var f;
 n=document.getElementById("a_znach").value;
-n=n+1;
+f=document.getElementById("f_znach").value;
+n=n+f;
 document.getElementById("a").innerHTML ="<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
 n=Number(document.getElementById("a_znach").value);
-n=n+1;
-document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"Имя мне левиафан, ибо нас мало "+"<br>"+ n+"</h1>";
+f=Number(document.getElementById("f_znach").value);
+n=n+f;
+document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
 }
 </script>
   </head>
   <body>
     <h1>Hello Plunker!</h1>
     n=<input type="text" value="0" id="a_znach">
+    f=<input type="text" value="0" id="f_znach">
 <br>
 <br>
 <button onclick="func()">Надо нажать</button>

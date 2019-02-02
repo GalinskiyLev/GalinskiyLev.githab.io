@@ -11,7 +11,6 @@
   background: #bc42f4;
   font-family: Comic Sans MS;
   }
-
 H1 {
   font-size: 30px;
   font-weight: normal;
@@ -32,23 +31,38 @@ H1 {
  a=Number(document.getElementById("a_znach").value);
  document.getElementById("kont_a").innerHTML ="<h1>"+"Периметр"+"<br>"+ a*4+"</h1>";
  }
+ 
  function func2(){
 var r;
  r=Number(document.getElementById("b_znach").value);
  document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ r*2+"</h1>";
  }
+ 
   function func3(){
 var g;
  g=Number(document.getElementById("g_znach").value);
  var eee = Math.sqrt((g*g)+(6350*6350));
  document.getElementById("g").innerHTML ="<h1>"+"длина до горизонта"+"<br>"+ eee+"</h1>";
  }
+ 
   function func4(){
 var k;
  k=Number(document.getElementById("k_znach").value);
- var eee = Math.sqrt((g*g)+(6350*6350));
- document.getElementById("k").innerHTML ="<h1>"+"квадрат"+"<br>"+ eee+"</h1>";
+ var l =k*k ;
+ document.getElementById("k").innerHTML ="<h1>"+"площадь"+"<br>"+ l+"</h1>";
+ l =k*k*k;
+  document.getElementById("k").innerHTML =document.getElementById("k").innerHTML + "<h1>"+"объём"+"<br>"+ l+"</h1>";
  }
+ 
+   function func5(){
+var R;
+ R=Number(document.getElementById("k_znach").value);
+ var f =2*3.14*R ;
+ document.getElementById("R").innerHTML ="<h1>"+"длина"+"<br>"+ f+"</h1>";
+ f =3.14*R*R;
+  document.getElementById("R").innerHTML =document.getElementById("R").innerHTML + "<h1>"+"площадь"+"<br>"+ f+"</h1>";
+ }
+ 
  </script>
  </head>
  <body>
@@ -56,17 +70,31 @@ var k;
   Сторона квадрата a=<input type="text" value="0" id="a_znach">
   <button onclick="func1()">1.25</button>
   <div id="kont_a"></div>
+  
+  
   <h1>Задача 1.26</h1>
   Радиус r=<input type="text" value="0" id="b_znach">
   <button onclick="func2()">1.26</button>
   <div id="b"></div> 
+  
+  
   <h1>Задача 1.27</h1>
   Длина до горизонта g=<input type="text" value="0" id="g_znach">
   <button onclick="func3()">1.27</button>
   <div id="g"></div>
-  <h1>Задача 1.27</h1>
- квадрат k=<input type="text" value="0" id="k_znach">
-  <button onclick="func4()">1.27</button>
-  <div id="g"></div>
+  
+  
+  <h1>Задача 1.28</h1>
+ куб k=<input type="text" value="0" id="k_znach">
+  <button onclick="func4()">1.28</button>
+  <div id="k"></div>
+  
+  
+  <h1>Задача 1.29</h1>
+ окружность R=<input type="text" value="0" id="k_znach">
+  <button onclick="func5()">1.28</button>
+  <div id="R"></div>
+  
+  
   </body> 
  </html>

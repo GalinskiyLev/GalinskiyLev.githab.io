@@ -57,17 +57,39 @@ var k;
    function func5(){
 var R;
  R=Number(document.getElementById("k_znach").value);
+ 
  var f =2*3.14*R ;
  document.getElementById("R").innerHTML ="<h1>"+"длина"+"<br>"+ f+"</h1>";
  f =3.14*R*R;
   document.getElementById("R").innerHTML =document.getElementById("R").innerHTML + "<h1>"+"площадь"+"<br>"+ f+"</h1>";
  }
  
+ function func6(){
+var z;
+ z=Number(document.getElementById("z_znach").value);
+ var q;
+ q=Number(document.getElementById("q_znach").value);
+ var f =z*q/2 ;
+ document.getElementById("kont131").innerHTML ="<h1>"+"cреднее арифметическое"+"<br>"+ f+"</h1>";
+ f =Math.sqrt(z*q);
+  document.getElementById("kont131").innerHTML =document.getElementById("kont131").innerHTML + "<h1>"+"среднее геометрическое"+"<br>"+ f+"</h1>";
+ }
+ 
+ 
+  function func7(){
+var m;
+ m=Number(document.getElementById("m_znach").value);
+ var v;
+ v=Number(document.getElementById("v_znach").value);
+ var f =m/v ;
+ document.getElementById("1").innerHTML ="<h1>"+"плотность"+"<br>"+ f+"</h1>";
+ }
+ 
  </script>
  </head>
  <body>
   <h1>Задача 1.25</h1>
-  Сторона квадрата a=<input type="text" value="0" id="a_znach">
+  Сторона квадрата a=<input type="text" value="0" id="a_znach"> 
   <button onclick="func1()">1.25</button>
   <div id="kont_a"></div>
   
@@ -91,9 +113,23 @@ var R;
   
   
   <h1>Задача 1.29</h1>
- окружность R=<input type="text" value="0" id="k_znach">
-  <button onclick="func5()">1.28</button>
+ окружность R=<input type="text" value="0" id="R_znach">
+  <button onclick="func5()">1.29</button>
   <div id="R"></div>
+  
+  
+  <h1>Задача 1.31</h1>
+ 1 число =<input type="text" value="0" id="z_znach">
+  2 число=<input type="text" value="0" id="q_znach">
+   <button onclick="func6()">1.31 (a,б)</button>
+  <div id="kont131"></div>
+  
+  
+  <h1>Задача 1.32</h1>
+ 1 число =<input type="text" value="0" id="m_znach">
+  2 число=<input type="text" value="0" id="v_znach">
+   <button onclick="func7()">1.32</button>
+  <div id="1"></div>
   
   
   </body> 

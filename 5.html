@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      document.getElementById("otvet1").innerHTML = "";
+      var i = 20;
+      while (i <= 35) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br> ";
+        i++;
+      }
+    }
+
+    function func2() {
+            document.getElementById("otvet1").innerHTML = "";
+       b = Number(document.getElementById("n_f2_znach").value);
+      var i = 10;
+      while (i < b) {
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + "<br> ";
+        i++;
+      }
+    }
+
+     
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      for (; n <= 50; n++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + n*n*n + "<br> ";
+      }
+
+    }
+
+
+ function func4() {
+      a = Number(document.getElementById("a_f4_znach").value);
+      b = Number(document.getElementById("b_f4_znach").value);
+      
+      while (a <= b){
+  
+
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + a + "<br> ";
+        a++;
+      }
+
+    }
+
+
+  </script>
+</head>
+
+<body>
+
+
+  <h1>Цикл while!</h1> 
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл Do while</h1> b=
+  <input type="text" value="16" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>Цикл for</h1> a=
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+
+  <h1>Цикл for</h1> a=
+  <input type="text" value="9" id="a_f4_znach">
+   b=
+  <input type="text" value="19" id="b_f4_znach">
+  <a href="#" onclick="func4()" class="button  text-blanco text-shadow-negra">♀</a>
+  <div id="otvet4"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
